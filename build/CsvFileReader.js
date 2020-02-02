@@ -14,11 +14,9 @@ var CsvFileReader = /** @class */ (function () {
             encoding: 'utf-8'
         })
             .split('\n')
-            // map out the array
             .map(function (row) {
             return row.split(',');
         });
-        // converts the value types in the array
     };
     return CsvFileReader;
 }());
