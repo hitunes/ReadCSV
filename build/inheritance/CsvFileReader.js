@@ -17,8 +17,9 @@ var CsvFileReader = /** @class */ (function () {
             // map out the array
             .map(function (row) {
             return row.split(',');
-        });
-        // converts the value types in the array
+        })
+            // converts the value types in the array
+            .map(this.mapRow);
     };
     return CsvFileReader;
 }());
